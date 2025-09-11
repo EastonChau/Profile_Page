@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        .navbar {
+            background-color: #0867d2;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px); /* Adjust for navbar height */
+            text-align: center;
+        }
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .writing-button {
+            background-color: #0867d2; /* Blue */
+            color: white;
+        }
+        .writing-button:hover {
+            background-color: #f17114;
+        }
+        .youtube-button {
+            background-color: #f17114; /* Orange */
+            color: white;
+        }
+        .youtube-button:hover {
+            background-color: #e60000;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="1.html">Home</a>
+        <a href="l.html">Literature</a>
+        <a href="https://youtube.com/@eastonchau?si=X5RV7-6tCwMxaOF0" target="_blank">YouTube</a>
+    </div>
+    <div class="container">
+        <h1>Hi! We've got two buttons here</h1>
+        <button class="writing-button" onclick="window.location.href='your-writing-page.html'">Literature</button>
+        <button class="youtube-button" onclick="window.location.href='https://youtube.com/@eastonchau?si=X5RV7-6tCwMxaOF0'">YouTube</button>
+    </div>
+</body>
+</html>
