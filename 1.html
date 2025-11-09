@@ -3,66 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src=""defer></script>
+   
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #ffffff;
-        }
-        .navbar {
-            background-color: #0867d2;
-            padding: 10px;
-            text-align: center;
-        }
-        .navbar a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 60px); /* Adjust for navbar height */
-            text-align: center;
-        }
-        button {
-            padding: 15px 30px;
-            margin: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .writing-button {
-            background-color: #0867d2; /* Blue */
-            color: white;
-        }
-        .writing-button:hover {
-            background-color: #f17114;
-        }
-        .youtube-button {
-            background-color: #f17114; /* Orange */
-            color: white;
-        }
-        .youtube-button:hover {
-            background-color: #e60000;
-        }
+    .layer4 {
+        transition: transform 0.3s ease;
+    } 
+
+    .layer4 h1, .layer4 p {
+        transition: transform 0.3s ease;
+    }
+
+    .layer4:hover h1, .layer4:hover p {
+        transform: translateX(-100px);
+    }
     </style>
 </head>
+
 <body>
     <div class="navbar">
-        <a href="1.html">Home</a>
-        <a href="l.html">Literature</a>
-        <a href="https://youtube.com/@eastonchau?si=X5RV7-6tCwMxaOF0" target="_blank">YouTube</a>
+        <button class="home-button" onclick="window.location.href='1.html'">
+            <img src="logo.gif" alt="Logo">
+        </button>
+        <div class="nav-links">
+            <a href="About.html">About Me</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a href="Game.html">Game</a>
+            <a href="Contact.html">Contact</a>
+        </div> 
     </div>
-    <div class="container">
-        <h1>Hi! We've got two buttons here</h1>
-        <button class="writing-button" onclick="window.location.href='your-writing-page.html'">Literature</button>
-        <button class="youtube-button" onclick="window.location.href='https://youtube.com/@eastonchau?si=X5RV7-6tCwMxaOF0'">YouTube</button>
+
+    <div class="hero">
+        <img class="layer1" src="Back.png">
+        <img class="layer2" src="Welcome.png">
+        <img class="layer3" src="Figure.png">
+        <div class="layer4">
+            <h1>I'm Easton</h1>
+            <p>Agile, bold, and convivial, I thrive on changes, challenges, and connections. As AI evolves at a remarkable pace, it can now write, draw, and even run a marathon. Rather than seeing it as a rival, I choose to ride the steed and harness its momentum along my career path. <a href="About.html">more about me</a></p>
+        </div>
     </div>
+
+    <footer>
+        <div class="logo">
+            <a href="1.html" target="_self">
+                <img src="logo-white.png" alt="home">
+            </a>
+        </div>
+        
+        <div class="text">
+            <p>This website is designed to help you get to know Easton better. Explore his profile to learn more about his interests, experiences, and passions.</p>
+        </div>
+
+        <hr style="border: 1px solid #a6a6a6; width: 90%;">
+
+        <div class="social-links">
+            <div class = "icon">
+                <a href="https://www.instagram.com/eastonchau" target="_blank">
+                    <img src="IG.png" alt="Instagram">
+                </a>
+            
+                <a href="http://www.linkedin.com/in/eastonchau" target="_blank">
+                    <img src="Linkedin.png" alt="LinkedIn">
+                </a>
+                
+                <a href="https://q.futunn.com/en/profile/231503526?share_code=02Oanz" target="_blank">
+                    <img src="Futu.png" alt="Futu">
+                </a>
+                
+                <a href="https://youtube.com/@eastonchau?si=FaPipADbqxiaopnI" target="_blank">
+                    <img src="Youtube2.png" alt="YouTube">
+                </a>
+
+                <a href="https://play.google.com/store/apps/dev?id=8062572161670876128" target="_blank">
+                    <img src="GooglePlay.png" alt="Google Play">
+                </a>
+            </div>
+        </div>
+        
+        <div class = "email">
+            <p>Email: <a href="mailto:chaueaston@gmail.com" style = "color:white;">chaueaston@gmail.com</a></p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
